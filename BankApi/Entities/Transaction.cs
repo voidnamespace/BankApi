@@ -13,8 +13,7 @@ public class Transaction
     public decimal Amount { get; set; } 
     public DateTime Date { get; set; } = DateTime.UtcNow; 
     public TransactionType Type { get; set; }
-
-
+    
     public ICollection<Transaction> TransactionsFrom { get; set; } = new List<Transaction>();
     public ICollection<Transaction> TransactionsTo { get; set; } = new List<Transaction>();
 
