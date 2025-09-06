@@ -10,7 +10,7 @@ namespace BankApi.Data
     : base(options)
         {
         }
-
+        
         public DbSet<Client> Clients { get; set; } = null!;
         public DbSet<BankCard> BankCards { get; set; } = null!;
         public DbSet<Transaction> Transactions { get; set; } = null!;
